@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/choose_stream"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/alumuni"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="#F8F5F6"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/alumuni"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Stream"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/startup"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="#F8F5F6"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/startup"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alumuni"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <Button
+        android:id="@+id/teacher"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="#F8F5F6"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/teachers"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startup"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <Button
+        android:id="@+id/nonteacher"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="#F8F5F6"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/non_teachers"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacher"
+        app:layout_constraintVertical_bias="0.006" />
+
+
+    <Button
+        android:id="@+id/seniors"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="#F8F5F6"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/seniors"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nonteacher"
+        app:layout_constraintVertical_bias="0.009" />
+
+<!--    <Button-->
+<!--        android:id="@+id/User"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:background="#F8F5F6"-->
+<!--        android:fontFamily="@font/aldrich"-->
+<!--        android:text="@string/user"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="normal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/Seniors"-->
+<!--        app:layout_constraintVertical_bias="0.018" />-->
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="78dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:padding="5dp"
+        android:text="@string/exit"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seniors"
+        app:layout_constraintVertical_bias="0.105" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="83dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/llconstraint"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_margin="3dp"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1.5"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5">
+
+            <TextView
+                android:id="@+id/accountHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/acme"
+                android:padding="1dp"
+                android:text="@string/account_holder_name"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/General"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountHolder"
+                android:layout_margin="1dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/acme"
+                android:padding="1dp"
+                android:text="@string/branch"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/General2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/General"
+                android:layout_margin="1dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/acme"
+                android:padding="1dp"
+                android:text="@string/batch"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

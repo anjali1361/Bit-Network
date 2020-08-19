@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.anjali.loginapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.Manifest.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:resizeableActivity="false"
+        android:theme="@style/AppTheme"
+        tools:targetApi="n">
+        <activity android:name="userInfo.NonTeacherInfoActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity
+            android:name="userInfo.TeacherInfoActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="userInfo.AlumuniInfoActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="userInfo.StartupInfoActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="profile.AlumuniProfileActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="profile.NonteachersProfileActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="profile.TeachersProfileActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="profile.StartupProfileActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="profile.UserActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="registration.NonTeachersActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="registration.TeachersActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="registration.StartupActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="registration.AlumuniActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="registration.RegistrationLoginActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="registration.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="registration.ForgotPasswordActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="registration.LoginActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="registration.RegisterActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="userInfo.MainActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
