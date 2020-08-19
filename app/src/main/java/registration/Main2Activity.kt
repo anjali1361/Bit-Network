@@ -48,12 +48,12 @@ class Main2Activity : AppCompatActivity() {
             setUpToolBar()
             openAlumuni()
 
-        //defining working of hamburger ic_launcher_foreground
-        val actionBarDrawerToggle=ActionBarDrawerToggle(this@Main2Activity,drawerLayout,R.string.open_drawer,R.string.close_drawer)//ActionBarDrawerToggle is a class,the last two parameter defines the action of drawerToggle i.e.ic_launcher_foreground
+        //defining working of hamburger ic_launcher
+        val actionBarDrawerToggle=ActionBarDrawerToggle(this@Main2Activity,drawerLayout,R.string.open_drawer,R.string.close_drawer)//ActionBarDrawerToggle is a class,the last two parameter defines the action of drawerToggle i.e.ic_launcher
 
-        drawerLayout.addDrawerListener(actionBarDrawerToggle)//set click listener on toggle or whenever ic_launcher_foreground is pressed it gets notified about it and then perform some action,gives functionality to toggle,but to make it work we hve to make the home button also functional as toggle is placed in place of this only
+        drawerLayout.addDrawerListener(actionBarDrawerToggle)//set click listener on toggle or whenever ic_launcher is pressed it gets notified about it and then perform some action,gives functionality to toggle,but to make it work we hve to make the home button also functional as toggle is placed in place of this only
 
-        actionBarDrawerToggle.syncState()//synchronizing the state of toggle,this code is used to change the hamburger ic_launcher_foreground to a back arrow ic_launcher_foreground and vice versa,or performs animation
+        actionBarDrawerToggle.syncState()//synchronizing the state of toggle,this code is used to change the hamburger ic_launcher to a back arrow ic_launcher and vice versa,or performs animation
 
         //handling clicklistenet on itms of menu
 
