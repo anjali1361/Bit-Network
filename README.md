@@ -1,2 +1,2 @@
 # Bit-Network
-My repo for alumuni network applicatio made of my own,not biased it is
+An android application for alumuni connection made with firebase having wonderful UI/UX .
